@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games — PhasmoFire Studios</title>
+  <meta name="description" content="Browse and buy games by PhasmoFire Studios on itch.io.">
+  <link rel="icon" href="assets/images/StudioLogo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="nav-header">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/StudioLogo.jpg" alt="PhasmoFire Studios logo" class="nav-logo-img">
+        <span><span class="text-fire">Phasmo</span><span class="text-purple">Fire</span> Studios</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html" class="active">Games</a></li>
+        <li><a href="art.html">Art</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Games</h1>
+        <p>Available on itch.io — free and premium titles.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="filter-bar" role="group" aria-label="Filter games by type">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="free">Free</button>
+          <button class="filter-btn" data-filter="paid">Paid</button>
+          <button class="filter-btn" data-filter="coming">Coming Soon</button>
+        </div>
+
+        <!--
+          ══════════════════════════════════════════
+          HOW TO ADD A GAME
+          ══════════════════════════════════════════
+          Copy one of the <article> blocks below.
+          Set data-tags to exactly one of: free | paid | coming
+
+          For a real cover image replace the placeholder div with:
+            <img src="assets/images/cover-GAMENAME.jpg"
+                 alt="Screenshot of GAME NAME"
+                 class="game-cover">
+
+          Update the itch.io href to your actual game URL.
+          ══════════════════════════════════════════
+        -->
+
+        <div class="games-grid">
+
+          <article class="game-card" data-tags="coming">
+            <img src="assets/images/HamletOfSequinoxPixelArtBackground.png" alt="Hamlet of Sequinox" class="game-cover">
+            <div class="game-body">
+              <div class="game-tags">
+                <span class="tag">RPG</span>
+                <span class="tag tag-coming">Coming Soon</span>
+              </div>
+              <h3>Hamlet of Sequinox</h3>
+              <p>A top-down 2D RPG currently in development. Wishlist it on itch.io to follow along as it takes shape.</p>
+              <a href="https://phasmofiregod.itch.io/hamlet-of-sequinox" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Wishlist on itch.io ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">
+        <span class="text-fire">Phasmo</span><span class="text-purple">Fire</span> Studios
+      </span>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="art.html">Art</a>
+        <a href="about.html">About</a>
+        <a href="links.html">Links</a>
+      </nav>
+      <p class="footer-copy">© 2026 PhasmoFire Studios. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

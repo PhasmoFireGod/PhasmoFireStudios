@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art — PhasmoFire Studios</title>
+  <meta name="description" content="Original illustrations, concept art, and game artwork by PhasmoFire Studios.">
+  <link rel="icon" href="assets/images/StudioLogo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="nav-header">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/StudioLogo.jpg" alt="PhasmoFire Studios logo" class="nav-logo-img">
+        <span><span class="text-fire">Phasmo</span><span class="text-purple">Fire</span> Studios</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="art.html" class="active">Art</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Art</h1>
+        <p>Original illustrations, concept art, and game artwork.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!--
+          ══════════════════════════════════════════
+          HOW TO ADD AN ART PIECE
+          ══════════════════════════════════════════
+          Copy one of the <div class="art-item"> blocks below.
+          Replace the placeholder-fill div with a real image:
+
+            <img src="assets/images/art-FILENAME.jpg"
+                 alt="Brief description of the artwork">
+
+          Update the aria-label and art-caption text with the piece title.
+          Click opens a full-size lightbox automatically.
+          ══════════════════════════════════════════
+        -->
+
+        <div class="art-grid">
+
+          <div class="art-item" tabindex="0" role="button" aria-label="View artwork: Comic Concept — Title Page">
+            <img src="assets/images/ComicConceptTitlePage.png" alt="Comic concept title page artwork">
+            <div class="art-caption">Comic Concept — Title Page</div>
+          </div>
+
+          <div class="art-item" tabindex="0" role="button" aria-label="View artwork: Hamlet of Sequinox — Pixel Art Background">
+            <img src="assets/images/HamletOfSequinoxPixelArtBackground.png" alt="Hamlet of Sequinox pixel art background">
+            <div class="art-caption">Hamlet of Sequinox — Pixel Art Background</div>
+          </div>
+
+          <div class="art-item" tabindex="0" role="button" aria-label="View artwork: Jesse Emote">
+            <img src="assets/images/JesseEmote.png" alt="Jesse emote artwork">
+            <div class="art-caption">Jesse Emote</div>
+          </div>
+
+          <div class="art-item" tabindex="0" role="button" aria-label="View artwork: Twilight Sparkle Fan Art">
+            <img src="assets/images/TwilightSparkleFanArt.png" alt="Twilight Sparkle fan art">
+            <div class="art-caption">Twilight Sparkle Fan Art</div>
+          </div>
+
+          <div class="art-item" tabindex="0" role="button" aria-label="View artwork: Victoria — Concept Art">
+            <img src="assets/images/VictoriaConceptArt.png" alt="Victoria character concept art">
+            <div class="art-caption">Victoria — Concept Art</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lb-close" aria-label="Close image viewer">✕</button>
+    <div class="lightbox-inner" id="lb-inner"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">
+        <span class="text-fire">Phasmo</span><span class="text-purple">Fire</span> Studios
+      </span>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="art.html">Art</a>
+        <a href="about.html">About</a>
+        <a href="links.html">Links</a>
+      </nav>
+      <p class="footer-copy">© 2026 PhasmoFire Studios. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
